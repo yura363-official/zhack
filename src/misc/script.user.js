@@ -19,7 +19,7 @@
         return new RegExp("^" + rule.split("*").map(escapeRegex).join(".*") + "$").test(str);
     }
 
-    var root = "https://cdn.jsdelivr.net/gh/exerin99/zhack@main/src/";
+    var root = "https://cdn.jsdelivr.net/gh/yura363-official/zhack@main/src/";
     var rawConfig = await fetch(root + "injector/config.json");
     var config = await rawConfig.json();
 
